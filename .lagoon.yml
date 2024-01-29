@@ -3,7 +3,7 @@ environments:
   main:
     routes:
       - nginx:
-        - nginx.aws-gpu.weystrom.net:
+        - demo.lagoon.weystrom.net:
             tls-acme: 'true'
             insecure: Redirect
 routes:
