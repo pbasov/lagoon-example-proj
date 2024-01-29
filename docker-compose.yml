@@ -1,7 +1,7 @@
 version: '2.3'
 
 x-lagoon-project:
-  &lagoon-project: "pbasov-lagoon-example"
+  &lagoon-project "pbasov-lagoon-example"
 
 x-environment:
   &default-environment
