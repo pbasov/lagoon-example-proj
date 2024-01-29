@@ -9,7 +9,7 @@ x-environment:
     # Route that should be used locally, if you are using pygmy, this route *must* end with .docker.amazee.io
     LAGOON_ROUTE: http://nginx-test.lagoon.aws-gpu.weystrom.net
     # Uncomment if you want to have the system behave as it will in production
-    #LAGOON_ENVIRONMENT_TYPE: production
+    LAGOON_ENVIRONMENT_TYPE: production
     # Uncomment to enable Xdebug and then restart via `docker-compose up -d`
     #XDEBUG_ENABLE: "true"
 
@@ -22,5 +22,5 @@ services:
   nginx:
     image: nginx
     labels:
-      lagoon.type: none 
+      lagoon.type: nginx 
 
