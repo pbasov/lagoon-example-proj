@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Meme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .message {
+            padding: 10px 15px;
+            margin: 10px;
+            border-radius: 8px;
+            position: relative;
+        }
+        .user-message {
+            background-color: #e0e0e0;
+            align-self: flex-start;
+        }
+        .ai-message {
+            background-color: #007bff;
+            color: white;
+            align-self: flex-end;
+        }
+        .messages {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages">
+            <div class="message user-message">
+                Hey AI, make me a meme about artificial intelligence!
+            </div>
+            <div class="message ai-message">
+                Generating meme... Error 404: Creativity not found.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
