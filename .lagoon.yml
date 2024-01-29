@@ -6,4 +6,6 @@ environments:
         - nginx.aws-gpu.weystrom.net:
             tls-acme: 'true'
             insecure: Redirect
-
+routes:
+  autogenerate:
+    enabled: false
