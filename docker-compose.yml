@@ -21,4 +21,6 @@ x-user:
 services:
   nginx:
     image: nginx
+    labels:
+      lagoon.type: none 
 
