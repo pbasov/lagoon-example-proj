@@ -1,0 +1,24 @@
+version: '2.3'
+
+x-lagoon-project:
+  &lagoon-project: "pbasov-lagoon-example"
+
+x-environment:
+  &default-environment
+    LAGOON_PROJECT: *lagoon-project
+    # Route that should be used locally, if you are using pygmy, this route *must* end with .docker.amazee.io
+    LAGOON_ROUTE: http://nginx-test.lagoon.aws-gpu.weystrom.net
+    # Uncomment if you want to have the system behave as it will in production
+    #LAGOON_ENVIRONMENT_TYPE: production
+    # Uncomment to enable Xdebug and then restart via `docker-compose up -d`
+    #XDEBUG_ENABLE: "true"
+
+x-user:
+  &default-user
+    # The default user under which the containers should run. Change this if you are on linux and run with another user than ID `1000`
+    user: '1000'
+
+services:
+  nginx:
+    image: nginx
+
