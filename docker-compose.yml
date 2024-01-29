@@ -20,7 +20,9 @@ x-user:
 
 services:
   nginx:
-    image: nginx
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
     labels:
       lagoon.type: nginx 
 
